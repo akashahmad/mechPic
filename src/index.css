@@ -15,3 +15,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.clr-darkblue {
+  color: #164e7a;
+}
+.bg-clr-darkblue {
+  background-color: #164e7a;
+}
+.clr-skyblue {
+  color: #8bc0ea;
+}
+.bg-clr-skyblue {
+  background-color: #8bc0ea;
+}

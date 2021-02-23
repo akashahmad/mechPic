@@ -19,7 +19,7 @@ const PageHeader = () => {
   );
   return (
     <Header>
-      <Row className="items-center my-4">
+      <Row className="items-center mt-4">
         <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
           <Logo />
         </Col>

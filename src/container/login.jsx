@@ -1,10 +1,9 @@
 import { Divider, Form, Input, Button } from "antd";
-import { withRouter, Link } from "react-router-dom";
 import Logo from "../components/atoms/logo";
 import Heading from "../components/atoms/heading";
 import Card from "../components/atoms/card";
 import LoginTemplates from "../components/templates/loginTemplates";
-const Login = (props) => {
+const Login = () => {
   const [form] = Form.useForm();
 
   const onFinish = () => {};
@@ -20,35 +19,28 @@ const Login = (props) => {
       <Divider
         style={{
           borderTop: "white",
+          marginBottom:"0px"
         }}
       />
-      <Card>
+      <Card >
         <Form form={form} name="Login font-weight-bold" onFinish={onFinish}>
           <Form.Item
             label=""
             name="email"
             rules={[{ required: true, message: "Please input your email!" }]}
           >
-            <Input
-              className="rounded-3xl font-weight-bold"
-              placeholder="Email address"
-            />
+            <Input className="rounded-3xl" placeholder="Email address" />
           </Form.Item>
           <Form.Item
             label=""
             name="password"
             rules={[{ required: true, message: "Please input your password!" }]}
           >
-            <Input.Password
-              className="rounded-3xl font-weight-bold"
-              placeholder="Password"
-            />
+            <Input className="rounded-3xl " placeholder="Password" />
           </Form.Item>
-          <Link to="/forget-password">
-            <p className="text-base clr-darkblue cursor-pointer my-3">
-              Forget Password?
-            </p>
-          </Link>
+          <p className="text-base clr-darkblue cursor-pointer my-3">
+            Forget Password?
+          </p>
           <div className="text-center my-4">
             <Button
               type="primary"
@@ -58,16 +50,14 @@ const Login = (props) => {
               Login
             </Button>
           </div>
-          <Link to="/sign-up">
-            <p className="text-base clr-darkblue cursor-pointer my-3">
-              New to this website? Create Account
-            </p>
-          </Link>
+          <p className="text-base text-center clr-darkblue cursor-pointer my-3">
+            New to this website? Create Account
+          </p>
           <div className="text-center my-4">
             <Button
               type="primary"
               className="bg-clr-darkblue rounded-3xl py-1 px-24"
-              onClick={() => props?.history?.push("/sign-up")}
+              htmlType="submit"
             >
               Sign Up
             </Button>
@@ -83,4 +73,4 @@ const Login = (props) => {
   );
 };
 
-export default withRouter(Login);
+export default Login;

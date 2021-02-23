@@ -114,7 +114,7 @@ const SignUp = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input your confirm Code!",
+                    message: "Please input your confirm password!",
                   },
                 ]}
               >

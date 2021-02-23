@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Login from "./container/login";
-import SignUp from "./container/siginUp";
+import SignUp from "./container/signUp";
 
 function App() {
   return (

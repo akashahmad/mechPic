@@ -19,12 +19,11 @@ const PageHeader = () => {
   );
   return (
     <Header>
-      <Row className="items-center">
+      <Row className="items-center my-4">
         <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
           <Logo />
         </Col>
         <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
-          {/* <SearchOutlined /> */}
           <Search
             prefix={<SearchOutlined />}
             placeholder="search"
@@ -42,8 +41,11 @@ const PageHeader = () => {
         >
           <Avatar size={50} icon={<UserOutlined />} />
           <Dropdown overlay={menu}>
-            <p className="ant-dropdown-link" href="#">
-              Hover me <CaretDownOutlined />
+            <p
+              className="ant-dropdown-link cursor-pointer px-2 clr-darkblue"
+              href="#"
+            >
+              Joe Doe <CaretDownOutlined />
             </p>
           </Dropdown>
         </Col>

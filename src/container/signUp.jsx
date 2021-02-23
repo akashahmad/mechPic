@@ -166,7 +166,7 @@ const SignUp = (props) => {
               type="primary"
               className="bg-clr-skyblue rounded-3xl py-1 px-24"
               htmlType="submit"
-              onClick={() => props?.history?.push("/")}
+              onClick={() => props?.history?.push("/login")}
             >
               Login
             </Button>

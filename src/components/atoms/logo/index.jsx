@@ -1,9 +1,6 @@
+import "./style.css";
 const Logo = () => {
-  return (
-    <div className="flex justify-center">
-      <img src="assets/logo.png" alt="logo" />
-    </div>
-  );
+  return <img className="logo" src="assets/logo.png" alt="logo" />;
 };
 
 export default Logo;

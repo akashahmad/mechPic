@@ -1,0 +1,19 @@
+.ant-layout-header {
+  background-color: white;
+}
+.header-logo {
+  height: 51px;
+  width: 180px;
+}
+.ant-input-group-wrapper {
+  display: -webkit-inline-box;
+  vertical-align: middle;
+}
+
+.ant-input-search .ant-input-affix-wrapper {
+  border-radius: 30px !important;
+  box-shadow: 1px 4px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.ant-input-group-addon {
+  display: none;
+}

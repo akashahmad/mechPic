@@ -10,7 +10,9 @@ const Login = (props) => {
   const onFinish = () => {};
   return (
     <LoginTemplates>
-      <Logo />
+      <div className="flex justify-center">
+        <Logo />
+      </div>
       <Divider
         style={{
           borderTop: "white",

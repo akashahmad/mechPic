@@ -15,7 +15,9 @@ const SignUp = (props) => {
   };
   return (
     <LoginTemplates className="signup-form">
-      <Logo />
+      <div className="flex justify-center">
+        <Logo />
+      </div>
       <Divider
         style={{
           borderTop: "white",
@@ -154,7 +156,7 @@ const SignUp = (props) => {
               Sign Up
             </Button>
           </div>
-          <Link to="/">
+          <Link to="/login">
             <p className="text-center text-base clr-darkblue cursor-pointer my-3">
               Already had an account?
             </p>

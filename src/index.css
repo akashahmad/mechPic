@@ -36,3 +36,12 @@ code {
 .bg-clr-skyblue {
   background-color: #8bc0ea;
 }
+.clr-gray {
+  color: #707070;
+}
+.bg-clr-gray {
+  background-color: #e6e6e6;
+}
+.tag-bg-clr {
+  background-color: rgba(139, 192, 234, 0.2);
+}

@@ -6,6 +6,7 @@
 }
 .bannedUser-Table .text-font {
   font-size: 17px;
+  font-weight: 600;
 }
 /* un active */
 .bannedUser-Table .banned-switch .ant-switch {

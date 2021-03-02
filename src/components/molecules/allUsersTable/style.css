@@ -6,6 +6,7 @@
 }
 .allUsers-Table .text-font {
   font-size: 17px;
+  font-weight: 600;
 }
 /* un active */
 .allUsers-Table .banned-switch .ant-switch {

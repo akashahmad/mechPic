@@ -6,6 +6,7 @@
 }
 .deletedUser-Table .text-font {
   font-size: 17px;
+  font-weight: 600;
 }
 /*banned un active */
 .deletedUser-Table .banned-switch .ant-switch {

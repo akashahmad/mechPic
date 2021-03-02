@@ -1,19 +1,20 @@
-import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import Login from "./container/login";
 import SignUp from "./container/signUp";
-import HomePage from "./container";
+import Layout from "./layout";
+import "./App.css";
+import "./assets/style/style.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <Switch>
-        <Route path="/" exact component={HomePage} />
         <Route path="/sign-up" component={SignUp} />
         <Route path="/login" component={Login} />
+        <Route path="/" component={Layout} />
       </Switch>
     </>
   );
-}
+};
 
-export default App;
+export default withRouter(App);

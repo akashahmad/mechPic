@@ -1,7 +1,7 @@
-// import "./style.css";
+import "./style.css";
 const Heading = (props) => {
   return (
-    <div className="text-2xl font-semibold text-center">
+    <div className="text-xl font-medium sideNavHeading">
       <h1>{props.heading}</h1>
     </div>
   );

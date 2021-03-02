@@ -1,0 +1,115 @@
+.blueColor {
+  color: #164e7a;
+}
+.deletedUser-Table {
+  background-color: rgba(139, 192, 234, 0.1);
+}
+.deletedUser-Table .text-font {
+  font-size: 17px;
+}
+/*banned un active */
+.deletedUser-Table .banned-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
+
+.deletedUser-Table .banned-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+}
+.deletedUser-Table .banned-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #929292;
+  box-shadow: none !important;
+}
+.deletedUser-Table .banned-switch .ant-switch-handle {
+  top: 3px !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/* active switch */
+.deletedUser-Table .active-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+}
+
+.deletedUser-Table .active-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  box-shadow: none !important;
+}
+.deletedUser-Table .active-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
+.deletedUser-Table .active-switch .ant-switch-checked {
+  border-color: #ff0000 !important;
+  background-color: #fff;
+  border: 2px solid #ff0000 !important;
+  padding: 8px 0px !important;
+}
+.deletedUser-Table .active-switch .ant-switch-handle {
+  top: 3px !important;
+  width: 12px !important;
+  margin-left: 5px;
+  height: 12px !important;
+}
+
+/* 2nd switch */
+/*banned un active */
+.deletedUser-Table .restore-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
+
+.deletedUser-Table .restore-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+}
+.deletedUser-Table .restore-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #929292;
+  box-shadow: none !important;
+}
+.deletedUser-Table .restore-switch .ant-switch-handle {
+  top: 3px !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+  
+/* active switch */
+.deletedUser-Table .active-restore-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+  }
+
+.deletedUser-Table .active-restore-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #164e7a;
+  box-shadow: none !important;
+}
+.deletedUser-Table .active-restore-switch .ant-switch {
+    background-color: #fff;
+    border: 2px solid #929292;
+    padding: 8px 0px !important;
+    height: 22px !important;
+    min-width: 38px !important;
+  }
+.deletedUser-Table .active-restore-switch .ant-switch-checked {
+  border-color: #164e7a !important;
+  background-color: #fff;
+  border: 2px solid #164e7a!important;
+  padding: 8px 0px !important;
+}
+.deletedUser-Table .active-restore-switch .ant-switch-handle {
+  top: 3px !important;
+  margin-left: 5px;
+  width: 12px !important;
+  height: 12px !important;
+}

@@ -1,0 +1,61 @@
+.blueColor {
+  color: #164e7a;
+}
+.allUsers-Table {
+  background-color: rgba(139, 192, 234, 0.1);
+}
+.allUsers-Table .text-font {
+  font-size: 17px;
+}
+/* un active */
+.allUsers-Table .banned-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
+
+.allUsers-Table .banned-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+}
+.allUsers-Table .banned-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #929292;
+  box-shadow: none !important;
+}
+.allUsers-Table .banned-switch .ant-switch-handle {
+    top: 3px !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/* active switch */
+.allUsers-Table .active-switch .ant-switch-handle {
+  margin: 1px ​0px 4px 0px !important;
+}
+
+.allUsers-Table .active-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  box-shadow: none !important;
+}
+.allUsers-Table .active-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
+.allUsers-Table .active-switch .ant-switch-checked {
+  border-color: #ff0000 !important;
+  background-color: #fff;
+  border: 2px solid #ff0000 !important;
+  padding: 8px 0px !important;
+}
+.allUsers-Table .active-switch .ant-switch-handle {
+    top: 3px !important;
+    margin-left: 5px;
+    width: 12px !important;
+    height: 12px !important;
+}

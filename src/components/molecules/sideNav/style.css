@@ -1,0 +1,15 @@
+.sideNav-component .active-backgroundColor {
+  background-color: #8bc0ea;
+}
+.sideNav-component .active-backgroundColor:hover {
+  background-color: #5696ca;
+}
+.sideNav-component .unactive-backgroundColor {
+  background-color: #fff;
+}
+.sideNav-component .unactive-backgroundColor:hover {
+  background-color: #8bc0ea;
+}
+.sideNav-component .ant-btn {
+  padding: 30px 40px !important;
+}

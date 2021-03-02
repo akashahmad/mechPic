@@ -1,0 +1,35 @@
+.tableHeader .title-and-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 33px !important;
+  min-width: 50px !important;
+}
+.tableHeader .title-and-switch .ant-switch-handle {
+  margin: 4px 0px 4px 0px !important;
+}
+.tableHeader .title-and-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #929292;
+  box-shadow: none !important;
+}
+
+/* active switch */
+.tableHeader .active-switch .ant-switch {
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 33px !important;
+  min-width: 50px !important;
+}
+.tableHeader .active-switch .ant-switch-handle {
+  margin: 4px 0px 4px 0px !important;
+}
+.tableHeader .active-switch .ant-switch-handle::before {
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  box-shadow: none !important;
+}
+.tableHeader .active-switch .ant-switch-checked {
+  border-color: #ff0000!important;
+}

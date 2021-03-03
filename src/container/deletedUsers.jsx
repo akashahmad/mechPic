@@ -1,11 +1,12 @@
 import { Col } from "antd";
 import DeletedUsers from "../components/templates/deletedUsers";
+import { withRouter } from "react-router-dom";
 
-const AllUsersPage = () => {
+const DeletedUsersPage = () => {
   return (
     <Col>
       <DeletedUsers />
     </Col>
   );
 };
-export default AllUsersPage;
+export default withRouter(DeletedUsersPage);

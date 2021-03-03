@@ -1,18 +1,23 @@
 .ant-layout-header {
   background-color: white;
 }
-.ant-input-group-wrapper {
+.header-component .ant-input-group-wrapper {
   display: -webkit-inline-box;
   vertical-align: middle;
 }
 
-.ant-input-search .ant-input-affix-wrapper {
+.header-component .ant-input-search .ant-input-affix-wrapper {
   border-radius: 30px !important;
   box-shadow: 1px 4px 40px 0 rgba(0, 0, 0, 0.1);
+  padding: 6px 5px;
 }
-.ant-input-group-addon {
+.header-component .ant-input-group-addon {
   display: none;
 }
-.anticon {
+.header-component .anticon {
   vertical-align: 1px;
+}
+.header-component input.ant-input{
+  font-size: 16px;
+  padding: 4px 0px 0px 0px!important;
 }

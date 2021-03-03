@@ -1,15 +1,43 @@
 import { useState } from "react";
 import { Col, Row, Avatar, Switch } from "antd";
-import { UserOutlined, DeleteFilled } from "@ant-design/icons";
+import { UserOutlined, DeleteFilled, EyeOutlined } from "@ant-design/icons";
 import "./style.css";
 
 const AllUsersTable = () => {
   const [banSwitch, setBanSwitch] = useState(false);
   return (
-    <Col className="allUsers-Table px-3 py-5 rounded-lg">
+    <Col className="allUsers-Table px-2 lg:px-5 xl:px-5 py-5 rounded-lg">
+      {/* table header */}
+      <Row className="w-full py-2 lg:hidden xl:hidden">
+        {/* image and name */}
+        <Col className="flex w-6/12 lg:w-4/12 xl:w-4/12 items-center">
+          <Col>
+            <h1 className="text-gray-400 px-2 text-font">User Name</h1>
+          </Col>
+        </Col>
+        {/* heading 2 */}
+        <Col className="flex w-2/12 lg:w-3/12 xl:w-3/12 items-center ">
+          <Col>
+            <h1 className="text-font text-gray-400">Ban</h1>
+          </Col>
+        </Col>
+        {/* heading 3 */}
+        <Col className="flex w-2/12 lg:w-3/12 xl:w-3/12 items-center">
+          <Col>
+            <h1 className="text-font text-gray-400">Delete</h1>
+          </Col>
+        </Col>
+        {/* link */}
+        <Col className="flex w-2/12 lg:w-2/12 xl:w-2/12 items-center">
+          <Col className="w-full">
+            <h1 className="text-font text-gray-400 text-right">Uploads</h1>
+          </Col>
+        </Col>
+      </Row>
+      {/* table body */}
       <Row className="w-full py-2">
         {/* image and name */}
-        <Col className="flex w-4/12 items-center">
+        <Col className="flex w-6/12 lg:w-4/12 xl:w-4/12 items-center">
           <Col>
             <Avatar size={50} icon={<UserOutlined />} />
           </Col>
@@ -19,14 +47,14 @@ const AllUsersTable = () => {
         </Col>
         {/* text and switch */}
         <Col
-          className={`flex w-3/12 items-center ${
+          className={`flex w-2/12 lg:w-3/12 xl:w-3/12 items-center ${
             banSwitch ? "active-switch" : "banned-switch"
           }`}
         >
-          <Col>
+          <Col className="hidden lg:block xl:block">
             <h1 className="text-font text-gray-400">Ban User</h1>
           </Col>
-          <Col className="px-5">
+          <Col className="lg:px-5 xl:px-5">
             <Switch
               onChange={(event) => {
                 setBanSwitch(event);
@@ -35,19 +63,23 @@ const AllUsersTable = () => {
           </Col>
         </Col>
         {/* text and switch */}
-        <Col className="flex w-3/12 items-center">
-          <Col>
+        <Col className="flex w-2/12 lg:w-3/12 xl:w-3/12 items-center">
+          <Col className="hidden lg:block xl:block">
             <h1 className="text-font text-gray-400">Deleted Uploads</h1>
           </Col>
-          <Col className="px-5 pb-2">
+          <Col className="px-2 lg:px-5 xl:px-5 pb-2">
             <DeleteFilled className="text-3xl text-gray-400 cursor-pointer hover:text-gray-600" />
-            {/* <Switch /> */}
           </Col>
         </Col>
         {/* link */}
-        <Col className="flex w-2/12 items-center">
-          <Col className="w-full">
+        <Col className="flex w-2/12 lg:w-2/12 xl:w-2/12 items-center">
+          {/* desktop screen heading */}
+          <Col className="w-full hidden lg:block xl:block">
             <h1 className="text-font text-blue-300 text-right">See Uploads</h1>
+          </Col>
+          <Col className="w-full text-right pr-3 block lg:hidden xl:hidden">
+            {/* mobile screen icon */}
+            <EyeOutlined className="text-2xl text-blue-300 cursor-pointer hover:text-blue-500" />
           </Col>
         </Col>
       </Row>

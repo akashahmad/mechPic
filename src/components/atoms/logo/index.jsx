@@ -1,7 +1,7 @@
 import "./style.css";
 const Logo = () => {
   return (
-    <div className="flex justify-center ">
+    <div>
       <img src="assets/logo.png" className="w-32" alt="logo" />
     </div>
   );

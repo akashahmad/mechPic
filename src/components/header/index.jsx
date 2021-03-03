@@ -5,28 +5,32 @@ import {
   CaretDownOutlined,
 } from "@ant-design/icons";
 import Logo from "../atoms/logo";
+import { withRouter } from "react-router-dom";
 import "./style.css";
 const { Header } = Layout;
 const { Search } = Input;
-const PageHeader = () => {
+
+const PageHeader = (props) => {
+  let { history } = props;
   const onSearch = () => {};
   const menu = (
     <Menu>
       <Menu.Item>
-        <a href="/">1st menu item</a>
+        <h3 onClick={() => history.push("/login")}>Logout</h3>
       </Menu.Item>
     </Menu>
   );
   return (
-    <Header>
+    <Header className="header-component">
       <Row className="items-center mt-4">
-        <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
+        <Col xs={8} sm={8} md={8} lg={6} xlg={6}>
           <Logo />
         </Col>
-        <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
+        <Col xs={8} sm={8} md={8} lg={12} xlg={12}>
           <Search
-            prefix={<SearchOutlined />}
-            placeholder="search"
+            className="text-3xl"
+            prefix={<SearchOutlined className="text-2xl px-3 text-blue-300" />}
+            placeholder="Search"
             allowClear
             onSearch={onSearch}
           />
@@ -35,8 +39,8 @@ const PageHeader = () => {
           xs={8}
           sm={8}
           md={8}
-          lg={8}
-          xlg={8}
+          lg={6}
+          xlg={6}
           className="text-center flex justify-center items-center"
         >
           <Avatar size={50} icon={<UserOutlined />} />
@@ -54,4 +58,4 @@ const PageHeader = () => {
   );
 };
 
-export default PageHeader;
+export default withRouter(PageHeader);

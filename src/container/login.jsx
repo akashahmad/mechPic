@@ -3,7 +3,9 @@ import Logo from "../components/atoms/logo";
 import Heading from "../components/atoms/heading";
 import Card from "../components/atoms/card";
 import LoginTemplates from "../components/templates/loginTemplates";
-const Login = () => {
+import { withRouter } from "react-router-dom";
+const Login = (props) => {
+  let { history } = props;
   const [form] = Form.useForm();
 
   const onFinish = () => {};
@@ -21,10 +23,10 @@ const Login = () => {
       <Divider
         style={{
           borderTop: "white",
-          marginBottom:"0px"
+          marginBottom: "0px",
         }}
       />
-      <Card >
+      <Card>
         <Form form={form} name="Login font-weight-bold" onFinish={onFinish}>
           <Form.Item
             label=""
@@ -48,6 +50,7 @@ const Login = () => {
               type="primary"
               className="bg-clr-skyblue rounded-3xl py-1 px-24"
               htmlType="submit"
+              onClick={() => history.push("/")}
             >
               Login
             </Button>
@@ -60,6 +63,7 @@ const Login = () => {
               type="primary"
               className="bg-clr-darkblue rounded-3xl py-1 px-24"
               htmlType="submit"
+              onClick={() => history.push("/sign-up")}
             >
               Sign Up
             </Button>
@@ -75,4 +79,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default withRouter(Login);

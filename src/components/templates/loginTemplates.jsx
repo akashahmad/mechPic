@@ -1,4 +1,5 @@
 import { Row, Col } from "antd";
+import { withRouter } from "react-router-dom";
 const LoginTemplates = (props) => {
   return (
     <Row className="justify-center pt-5">
@@ -9,4 +10,4 @@ const LoginTemplates = (props) => {
   );
 };
 
-export default LoginTemplates;
+export default withRouter(LoginTemplates);

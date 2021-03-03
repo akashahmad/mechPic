@@ -1,4 +1,5 @@
 import { Col } from "antd";
+import { withRouter } from "react-router-dom";
 import AllUsers from "../components/templates/allUsers";
 
 const AllUsersPage = () => {
@@ -8,4 +9,4 @@ const AllUsersPage = () => {
     </Col>
   );
 };
-export default AllUsersPage;
+export default withRouter(AllUsersPage);

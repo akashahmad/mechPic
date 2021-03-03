@@ -5,7 +5,9 @@ import Heading from "../components/atoms/heading";
 import Card from "../components/atoms/card";
 import LoginTemplates from "../components/templates/loginTemplates";
 import "./style.css";
+
 const SignUp = (props) => {
+  let { history } = props;
   const [form] = Form.useForm();
   const onFinish = () => {
     form.validateFields().then((values) => {
@@ -152,6 +154,7 @@ const SignUp = (props) => {
               type="primary"
               className="bg-clr-darkblue rounded-3xl py-1 px-24"
               htmlType="submit"
+              onClick={() => history.push("/")}
             >
               Sign Up
             </Button>
@@ -166,7 +169,7 @@ const SignUp = (props) => {
               type="primary"
               className="bg-clr-skyblue rounded-3xl py-1 px-24"
               htmlType="submit"
-              onClick={() => props?.history?.push("/login")}
+              onClick={() => history.push("/login")}
             >
               Login
             </Button>

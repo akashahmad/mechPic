@@ -1,11 +1,12 @@
 import { Col } from "antd";
 import BannedUsers from "../components/templates/bannedUsers";
+import { withRouter } from "react-router-dom";
 
-const AllUsersPage = () => {
+const BannedUsersPage = () => {
   return (
     <Col>
       <BannedUsers />
     </Col>
   );
 };
-export default AllUsersPage;
+export default withRouter(BannedUsersPage);

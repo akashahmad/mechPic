@@ -7,14 +7,14 @@ const TableHeader = (props) => {
   let { heading1, heading2 } = props;
   const [pauseSwitch, setPauseSwitch] = useState(false);
   return (
-    <Row className="flex justify-between tableHeader py-4">
+    <Row className="lg:flex-row xl:flex-row lg:justify-between xl:justify-between tableHeader py-4">
       {/* heading */}
-      <Col>
+      <Col className="flex items-center hidden lg:block xl:block lg:w-6/12 xl:w-6/12">
         <Heading heading={heading1} />
       </Col>
       {/* heading and Switch */}
       <Col
-        className={`flex items-center ${
+        className={`flex items-center justify-between lg:justify-end xl:justify-end w-full lg:w-6/12 xl:w-6/12 ${
           pauseSwitch ? "active-switch" : "title-and-switch"
         }`}
       >

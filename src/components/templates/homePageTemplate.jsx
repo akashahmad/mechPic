@@ -6,6 +6,7 @@ import CardRow from "../molecules/cardRow";
 import Head from "../atoms/heading/h2";
 
 const HomePageTemplates = (props) => {
+  console.log("props", props.isMobile);
   return (
     <>
       {!props?.isMobile ? <Header /> : <MobileHeader />}

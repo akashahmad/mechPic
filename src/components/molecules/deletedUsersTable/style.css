@@ -6,7 +6,12 @@
 }
 .deletedUser-Table .text-font {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1024px){
+  .deletedUser-Table .text-font{
+    font-size: 13px;
+  }
 }
 /*banned un active */
 .deletedUser-Table .banned-switch .ant-switch {

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Col, Row, Avatar, Switch } from "antd";
-import { UserOutlined, DeleteFilled, EyeOutlined } from "@ant-design/icons";
+import { UserOutlined, DeleteFilled, EyeFilled  } from "@ant-design/icons";
 import "./style.css";
 
 const AllUsersTable = () => {
   const [banSwitch, setBanSwitch] = useState(false);
   return (
-    <Col className="bannedUser-Table px-2 lg:px-5 xl:px-5 py-5 rounded-lg">
+    <Col className="bannedUser-Table px-2 lg:px-7 xl:px-7 py-1 rounded-lg">
       {/* table header */}
       <Row className="w-full py-2 lg:hidden xl:hidden">
         {/* image and name */}
@@ -24,7 +24,9 @@ const AllUsersTable = () => {
         {/* heading 3 */}
         <Col className="flex w-2/12 lg:w-3/12 xl:w-3/12 items-center">
           <Col>
-            <h1 className="text-font text-gray-400">Restore</h1>
+            <h1 className="text-font text-gray-400 pr-1 lg:pr-0 xl:pr-0">
+              Restore
+            </h1>
           </Col>
         </Col>
         {/* link */}
@@ -78,7 +80,7 @@ const AllUsersTable = () => {
           </Col>
           <Col className="w-full text-right pr-3 block lg:hidden xl:hidden">
             {/* mobile screen icon */}
-            <EyeOutlined className="text-2xl text-blue-300 cursor-pointer hover:text-blue-500" />
+            <EyeFilled className="text-2xl text-blue-300 cursor-pointer hover:text-blue-500" />
           </Col>
         </Col>
       </Row>

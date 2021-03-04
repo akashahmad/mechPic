@@ -16,17 +16,17 @@ const menu = (
   </Menu>
 );
 
-const AllUsersTable = () => {
+const ImagesApprovalTable = () => {
   const [banSwitch, setBanSwitch] = useState(false);
   return (
-    <Col className="imageApproval-component px-2 lg:px-5 xl:px-5 py-5 rounded-lg">
+    <Col className="imageApproval-component px-2 lg:px-7 xl:px-7 py-1 rounded-lg">
       <Row className="w-full py-2 flex">
         {/* left-side section */}
         <Col className="w-2/12">
           <img src={BikeImage} alt="" />
         </Col>
         {/* right-side section */}
-        <Col className="w-10/12 flex flex-col lg:flex-row xl:flex-row lg:py-2 xl:py-2 ">
+        <Col className="w-10/12 flex flex-col lg:flex-row xl:flex-row lg:py-1 xl:py-1 ">
           {/* left side */}
           {/* headings and tags */}
           <Col className="flex w-12/12 lg:w-4/12 xl:w-4/12 px-1">
@@ -37,16 +37,19 @@ const AllUsersTable = () => {
               </Col>
               {/* tags */}
               <Col>
-                <h1 className="text-blue-300 px-2 py-2 text-font">
+                <h1 className="text-blue-300 px-2 lg:py-2 xl:py-2 font-medium">
                   #dirtbike #biking #dirtracing #motorsports
                 </h1>
               </Col>
-              <Col className="hidden lg:block xl:block dropDown">
-                <Row className="flex items-center px-2 pt-3">
+              <Col>
+                <Row className="flex items-center px-2 py-1 lg:py-1 xl:py-1 dropDown">
                   <Avatar size={30} icon={<UserOutlined />} />
                   <Dropdown overlay={menu}>
                     <h3 className="ant-dropdown-link cursor-pointer px-2 font-bold clr-darkblue">
-                      Blaziken <CaretDownOutlined />
+                      Blaziken{" "}
+                      <CaretDownOutlined
+                      // className="hidden lg:block xl:block"
+                      />
                     </h3>
                   </Dropdown>
                 </Row>
@@ -54,11 +57,11 @@ const AllUsersTable = () => {
             </Col>
           </Col>
           {/* right side */}
-          <Col className="w-12/12 lg:w-8/12 xl:w-8/12 flex justify-end">
-            <Row className="w-12/12 flex flex justify-end">
+          <Col className="w-12/12 lg:w-8/12 xl:w-8/12 flex justify-between lg:justify-end xl:justify-end py-1 lg:py-0 xl:py-0">
+            <Row className="w-full flex justify-between lg:justify-end  xl:justify-end">
               {/* text and switch */}
               <Col
-                className={`flex px-5 ${
+                className={`flex lg:px-5 xl:px-5 ${
                   banSwitch ? "active-switch" : "banned-switch"
                 }`}
               >
@@ -91,4 +94,4 @@ const AllUsersTable = () => {
     </Col>
   );
 };
-export default AllUsersTable;
+export default ImagesApprovalTable;

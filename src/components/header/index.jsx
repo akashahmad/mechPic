@@ -22,7 +22,7 @@ const PageHeader = (props) => {
   );
   return (
     <Header className="header-component">
-      <Row className="items-center mt-4">
+      <Row className="items-center py-5">
         <Col xs={8} sm={8} md={8} lg={6} xlg={6}>
           <Logo />
         </Col>

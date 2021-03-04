@@ -2,7 +2,8 @@ import { withRouter } from "react-router-dom";
 import { Col } from "antd";
 import TableHeader from "../molecules/tableHeader";
 import TableBody from "../molecules/imagesApproval";
-import ImageApprovalHeader from "../molecules/imagesApprovalHeader";
+import MobileNavigation from "../molecules/mobileNavigation";
+// import ImageApprovalHeader from "../molecules/imagesApprovalHeader";
 
 const ImageApprovalTemplate = () => {
   return (
@@ -16,7 +17,8 @@ const ImageApprovalTemplate = () => {
       </Col>
       {/* mobile navigation  */}
       <Col className="block lg:hidden xl:hidden">
-        <ImageApprovalHeader />
+        <MobileNavigation />
+        {/* <ImageApprovalHeader /> */}
       </Col>
       {/* table */}
       <Col className="py-5">

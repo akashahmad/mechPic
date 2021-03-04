@@ -12,6 +12,10 @@
   background-color: #fff;
   border: 2px solid #929292;
   box-shadow: none !important;
+  top: 2px!important;
+  right: 2px!important;
+  bottom: 2px!important;
+  left: 2px!important;
 }
 
 /* active switch */
@@ -29,7 +33,11 @@
   background-color: #fff;
   border: 2px solid #ff0000;
   box-shadow: none !important;
+  top: 2px!important;
+  right: 2px!important;
+  bottom: 2px!important;
+  left: 2px!important;
 }
 .tableHeader .active-switch .ant-switch-checked {
-  border-color: #ff0000!important;
+  border-color: #ff0000 !important;
 }

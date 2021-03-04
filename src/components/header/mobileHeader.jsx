@@ -1,5 +1,5 @@
 import { Col, Row, Avatar } from "antd";
-import { useState } from "react";
+// import { useState } from "react";
 import {
   UserOutlined,
   // VideoCameraOutlined,
@@ -10,10 +10,10 @@ import "./style.css";
 const MobileHeader = () => {
   //   const onSearch = () => {};
   // const { Sider } = Layout;
-  const [collapsed, setCollapsed] = useState(false);
-  const toggle = () => {
-    setCollapsed(!collapsed);
-  };
+  // const [collapsed, setCollapsed] = useState(false);
+  // const toggle = () => {
+  //   setCollapsed(!collapsed);
+  // };
   return (
     <Row className="items-center m-4">
       {/* <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -30,23 +30,23 @@ const MobileHeader = () => {
           </Menu.Item>
         </Menu>
       </Sider> */}
-      <Col xs={8} sm={8} md={8} lg={8} xlg={8}>
-        <img
+      {/* <Col xs={8} sm={8} md={8} lg={8} xlg={8}> */}
+      {/* <img
           className="h-6 w-6"
           src="assets/hamburger.png"
           alt="hamburger"
           onClick={() => {
             toggle();
           }}
-        />
-      </Col>
+        /> */}
+      {/* </Col> */}
       <Col
-        xs={8}
-        sm={8}
-        md={8}
-        lg={8}
-        xlg={8}
-        className="text-center flex justify-center"
+        xs={16}
+        sm={16}
+        md={16}
+        lg={16}
+        xlg={16}
+        className="text-center flex justify-end"
       >
         <Logo />
       </Col>

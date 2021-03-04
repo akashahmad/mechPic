@@ -1,26 +1,12 @@
 import { withRouter } from "react-router-dom";
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 import Heading from "../../atoms/sideNavHeading";
-import EditIcon from "../../../assets/images/edit.png";
 import "./style.css";
 
 const SideNav = (props) => {
   let { history } = props;
   return (
     <Col className="w-12/12 px-2 sideNav-component">
-      {/* link 1 All Users */}
-      <Row className="pb-8">
-        <Col>
-          {/* <Heading heading="All Users" /> */}
-          <Button
-            type="primary"
-            className="bg-clr-darkblue text-xl rounded-full w-full flex items-center"
-          >
-            <img src={EditIcon} alt="edit-button" />
-            <span className="px-5">Upload</span>
-          </Button>
-        </Col>
-      </Row>
       {/* link 1 All Users */}
       <Row className="py-2 w-6/12 lg:w-11/12 xl:w-11/12">
         <Col

@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Col, Row, Avatar, Switch } from "antd";
 import { UserOutlined, DeleteFilled, EyeFilled } from "@ant-design/icons";
+import { withRouter } from "react-router-dom";
 import "./style.css";
 
-const AllUsersTable = () => {
+const AllUsersTable = (props) => {
+  let { history } = props;
   const [banSwitch, setBanSwitch] = useState(false);
   return (
     <Col className="allUsers-Table px-2 lg:px-7 xl:px-7 py-1 rounded-lg">
@@ -75,15 +77,23 @@ const AllUsersTable = () => {
         <Col className="flex w-2/12 lg:w-2/12 xl:w-2/12 items-center">
           {/* desktop screen heading */}
           <Col className="w-full hidden lg:block xl:block">
-            <h1 className="text-font text-blue-300 text-right">See Uploads</h1>
+            <h1
+              className="text-font text-blue-300 text-right cursor-pointer"
+              onClick={() => history.push("/uploads")}
+            >
+              See Uploads
+            </h1>
           </Col>
           <Col className="w-full text-right pr-3 block lg:hidden xl:hidden">
             {/* mobile screen icon */}
-            <EyeFilled className="text-2xl text-blue-300 cursor-pointer hover:text-blue-500" />
+            <EyeFilled
+              className="text-2xl text-blue-300 cursor-pointer hover:text-blue-500"
+              onClick={() => history.push("/uploads")}
+            />
           </Col>
         </Col>
       </Row>
     </Col>
   );
 };
-export default AllUsersTable;
+export default withRouter(AllUsersTable);

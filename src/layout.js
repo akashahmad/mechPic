@@ -6,6 +6,7 @@ import AllUsers from "./container/allUsers";
 import BannedUsers from "./container/bannedUsers";
 import DeletedUsers from "./container/deletedUsers";
 import ImageApproval from "./container/imageApproval";
+import SeeUploads from "./container/seeUploads";
 import { getBreakPoint } from "./utils/functions";
 import { Grid } from "antd";
 
@@ -39,6 +40,7 @@ const LayoutPage = () => {
                 exact
                 component={ImageApproval}
               />
+              <Route path="/uploads" exact component={SeeUploads} />
             </Switch>
           </Col>
         </Row>

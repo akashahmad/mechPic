@@ -42,9 +42,9 @@ const Login = (props) => {
           >
             <Input className="rounded-3xl " placeholder="Password" />
           </Form.Item>
-          <p className="text-base clr-darkblue cursor-pointer my-3">
+          {/* <p className="text-base clr-darkblue cursor-pointer my-3">
             Forget Password?
-          </p>
+          </p> */}
           <div className="text-center my-4">
             <Button
               type="primary"
@@ -55,7 +55,7 @@ const Login = (props) => {
               Login
             </Button>
           </div>
-          <p className="text-base text-center clr-darkblue cursor-pointer my-3">
+          {/* <p className="text-base text-center clr-darkblue cursor-pointer my-3">
             New to this website? Create Account
           </p>
           <div className="text-center my-4">
@@ -67,7 +67,7 @@ const Login = (props) => {
             >
               Sign Up
             </Button>
-          </div>
+          </div> */}
         </Form>
       </Card>
       <Divider

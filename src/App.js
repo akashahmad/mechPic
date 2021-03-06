@@ -11,7 +11,7 @@ const App = () => {
     <>
       {/* <HomePageTemplate /> */}
       <Switch>
-        <Route path="/sign-up" component={SignUp} />
+        {/* <Route path="/sign-up" component={SignUp} /> */}
         <Route path="/login" component={Login} />
         <Route path="/" component={Layout} />
       </Switch>

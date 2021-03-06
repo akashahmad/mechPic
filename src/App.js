@@ -1,6 +1,6 @@
 import { Route, Switch, withRouter } from "react-router-dom";
 import Login from "./container/login";
-import SignUp from "./container/signUp";
+// import SignUp from "./container/signUp";
 import Layout from "./layout";
 // import HomePageTemplate from "./container/index";
 // import "./App.css";

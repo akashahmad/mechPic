@@ -23,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "yarn eslint . --ignore-path ./.gitignore && yarn prettier --check './**/*.ts{,x}' --config ./.prettierrc",
+    "lint:fix": "yarn lint-staged"
   },
   "browserslist": {
     "production": [

@@ -8,8 +8,8 @@
   font-size: 17px;
   font-weight: 700;
 }
-@media only screen and (max-width: 1024px){
-  .allUsers-Table .text-font{
+@media only screen and (max-width: 1024px) {
+  .allUsers-Table .text-font {
     font-size: 13px;
   }
 }
@@ -31,9 +31,9 @@
   box-shadow: none !important;
 }
 .allUsers-Table .banned-switch .ant-switch-handle {
-    top: 3px !important;
-    width: 12px !important;
-    height: 12px !important;
+  top: 3px !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 /* active switch */
@@ -60,8 +60,8 @@
   padding: 8px 0px !important;
 }
 .allUsers-Table .active-switch .ant-switch-handle {
-    top: 3px !important;
-    margin-left: 5px;
-    width: 12px !important;
-    height: 12px !important;
+  top: 3px !important;
+  margin-left: 5px;
+  width: 12px !important;
+  height: 12px !important;
 }

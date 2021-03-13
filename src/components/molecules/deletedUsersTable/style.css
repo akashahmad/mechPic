@@ -8,8 +8,8 @@
   font-size: 17px;
   font-weight: 700;
 }
-@media only screen and (max-width: 1024px){
-  .deletedUser-Table .text-font{
+@media only screen and (max-width: 1024px) {
+  .deletedUser-Table .text-font {
     font-size: 13px;
   }
 }
@@ -89,11 +89,11 @@
   width: 12px !important;
   height: 12px !important;
 }
-  
+
 /* active switch */
 .deletedUser-Table .active-restore-switch .ant-switch-handle {
   margin: 1px ​0px 4px 0px !important;
-  }
+}
 
 .deletedUser-Table .active-restore-switch .ant-switch-handle::before {
   background-color: #fff;
@@ -101,16 +101,16 @@
   box-shadow: none !important;
 }
 .deletedUser-Table .active-restore-switch .ant-switch {
-    background-color: #fff;
-    border: 2px solid #929292;
-    padding: 8px 0px !important;
-    height: 22px !important;
-    min-width: 38px !important;
-  }
+  background-color: #fff;
+  border: 2px solid #929292;
+  padding: 8px 0px !important;
+  height: 22px !important;
+  min-width: 38px !important;
+}
 .deletedUser-Table .active-restore-switch .ant-switch-checked {
   border-color: #164e7a !important;
   background-color: #fff;
-  border: 2px solid #164e7a!important;
+  border: 2px solid #164e7a !important;
   padding: 8px 0px !important;
 }
 .deletedUser-Table .active-restore-switch .ant-switch-handle {

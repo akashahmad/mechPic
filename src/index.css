@@ -1,10 +1,10 @@
-@import "antd/dist/antd.css";
+@import 'antd/dist/antd.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,8 +13,7 @@ p {
   font-size: 16px;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 .ant-input {
   line-height: 2.5715;

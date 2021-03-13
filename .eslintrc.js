@@ -1,7 +1,8 @@
 module.exports = {
     env: {
         browser: true,
-        es6: true,
+        // es6: true,
+        node: true,
     },
     extends: [
         'eslint:recommended',
@@ -27,6 +28,7 @@ module.exports = {
         radix: 'error',
         'space-before-blocks': 'error',
         'import/prefer-default-export': 'off',
+        'react/react-in-jsx-scope': 0,
     },
     overrides: [
         {

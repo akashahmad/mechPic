@@ -1,12 +1,8 @@
-.mobileNav-component
-  .ant-select-single:not(.ant-select-customize-input)
-  .ant-select-selector {
+.mobileNav-component .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
   height: fit-content !important;
   padding: 15px 25px !important;
 }
-.mobileNav-component
-  .ant-select:not(.ant-select-customize-input)
-  .ant-select-selector {
+.mobileNav-component .ant-select:not(.ant-select-customize-input) .ant-select-selector {
   border-radius: 30px !important;
   background-color: rgba(139, 192, 234, 0.6);
   font-size: 20px;

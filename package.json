@@ -12,6 +12,7 @@
         "@types/react-router-dom": "^5.1.7",
         "antd": "^4.12.3",
         "antd-img-crop": "^3.14.1",
+        "eslint": "^7.22.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-router-dom": "^5.2.0",
@@ -28,7 +29,10 @@
         "lint:fix": "yarn lint-staged"
     },
     "eslintConfig": {
-        "extends": "react-app"
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
     },
     "browserslist": {
         "production": [

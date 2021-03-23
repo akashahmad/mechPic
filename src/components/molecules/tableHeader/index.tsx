@@ -4,8 +4,8 @@ import Heading from '../../atoms/tableHeading';
 import './style.css';
 
 interface TableHeaderProps {
-    heading1: String;
-    heading2: String;
+    heading1: string;
+    heading2: string;
 }
 
 const TableHeader = ({ heading1, heading2 }: TableHeaderProps) => {

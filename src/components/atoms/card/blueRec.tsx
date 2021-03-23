@@ -1,7 +1,12 @@
 import { Card } from 'antd';
 import './style.css';
-const blueCard = (props: any) => {
-    return <Card className="blue-rec-bg">{props.children}</Card>;
+
+interface Props {
+    children?: any;
+}
+
+const blueCard = ({ children }: Props) => {
+    return <Card className="blue-rec-bg">{children}</Card>;
 };
 
 export default blueCard;

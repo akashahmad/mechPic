@@ -4,8 +4,11 @@ import { UserOutlined, EyeFilled } from '@ant-design/icons';
 import { withRouter } from 'react-router-dom';
 import './style.css';
 
-const AllUsersTable = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const AllUsersTable = ({ history }: Props) => {
     const [banSwitch, setBanSwitch] = useState(false);
     const [restoreSwitch, setRestoreSwitch] = useState(false);
     return (

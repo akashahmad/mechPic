@@ -3,8 +3,11 @@ import { Row, Col } from 'antd';
 import Heading from '../../atoms/sideNavHeading';
 import './style.css';
 
-const SideNav = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const SideNav = ({ history }: Props) => {
     return (
         <Col className="w-12/12 px-2 sideNav-component">
             {/* link 1 All Users */}

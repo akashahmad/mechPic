@@ -6,8 +6,11 @@ import Card from '../components/atoms/card';
 import LoginTemplates from '../components/templates/loginTemplates';
 import './style.css';
 
-const SignUp = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const SignUp = ({ history }: Props) => {
     const [form] = Form.useForm();
     const onFinish = () => {
         form.validateFields().then((values) => {

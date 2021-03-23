@@ -4,8 +4,11 @@ import { UserOutlined, DeleteFilled, EyeFilled } from '@ant-design/icons';
 import { withRouter } from 'react-router-dom';
 import './style.css';
 
-const BannedUsersTable = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const BannedUsersTable = ({ history }: Props) => {
     const [banSwitch, setBanSwitch] = useState(false);
     return (
         <Col className="bannedUser-Table px-2 lg:px-7 xl:px-7 py-1 rounded-lg">

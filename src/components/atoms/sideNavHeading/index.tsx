@@ -1,7 +1,7 @@
 import './style.css';
 
 interface HeadingProps {
-    heading: String;
+    heading: string;
 }
 
 const Heading = ({ heading }: HeadingProps) => {

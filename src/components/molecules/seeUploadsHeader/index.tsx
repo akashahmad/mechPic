@@ -5,11 +5,16 @@ import { ArrowLeftOutlined, UserOutlined } from '@ant-design/icons';
 import Heading from '../../atoms/tableHeading';
 import './style.css';
 
-const SeeUploadsHeader = (props: any) => {
-    let { heading2, history } = props;
+interface Props {
+    heading2?: string;
+    history?: any;
+}
+
+const SeeUploadsHeader = ({ history, heading2 }: Props) => {
+    // let { heading2, history } = props;
     const [pauseSwitch, setPauseSwitch] = useState(false);
     return (
-        <Row className="flex-col flex-col-reverse  lg:flex-row xl:flex-row lg:justify-between xl:justify-between seeUploadHeader py-4">
+        <Row className="flex-col flex-col-reverse lg:flex-row xl:flex-row lg:justify-between xl:justify-between seeUploadHeader py-4">
             {/* heading */}
             <Row
                 className="w-12/12 lg:w-5/12 xl:w-5/12 flex items-center justify-between lg:justify-start xl:justify-start pt-8 lg:pt-0 xl:pt-0 "

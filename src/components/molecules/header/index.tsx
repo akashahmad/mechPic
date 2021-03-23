@@ -6,8 +6,11 @@ import './style.css';
 const { Header } = Layout;
 const { Search } = Input;
 
-const PageHeader = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const PageHeader = ({ history }: Props) => {
     const onSearch = () => {};
     const menu = (
         <Menu>

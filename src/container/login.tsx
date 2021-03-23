@@ -5,8 +5,10 @@ import Card from '../components/atoms/card';
 import LoginTemplates from '../components/templates/loginTemplates';
 import { withRouter } from 'react-router-dom';
 
-const Login = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+const Login = ({ history }: Props) => {
     const [form]: any = Form.useForm();
 
     const onFinish = () => {};

@@ -1,9 +1,11 @@
 import { Row, Col } from 'antd';
 import { withRouter } from 'react-router-dom';
 
-// interface LoginTemplateProps {}
-// const LoginTemplate: React.FC<LoginTemplateProps> = (props: any) => {
-const LoginTemplate = (props: any) => {
+interface Props {
+    children?: any;
+}
+
+const LoginTemplate = ({ children }: Props) => {
     return (
         <Row className="justify-center pt-5">
             <Col
@@ -13,7 +15,7 @@ const LoginTemplate = (props: any) => {
                 lg={6}
                 // xlg={8}
             >
-                {props.children}
+                {children}
             </Col>
         </Row>
     );

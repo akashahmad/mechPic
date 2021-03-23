@@ -9,7 +9,7 @@ const DeletedUsers = () => {
         <Col>
             {/* header  */}
             <Col>
-                <TableHeader heading1={'Deleted Users'} heading2={'Pause All Uploads'} />
+                <TableHeader heading1="Deleted Users" heading2="Pause All Uploads" />
             </Col>
             {/* mobile navigation  */}
             <Col className="block lg:hidden xl:hidden">

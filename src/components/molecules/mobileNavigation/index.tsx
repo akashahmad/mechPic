@@ -5,8 +5,11 @@ import './style.css';
 
 const { Option } = Select;
 
-const mobileNavigation = (props: any) => {
-    let { history } = props;
+interface Props {
+    history?: any;
+}
+
+const mobileNavigation = ({ history }: Props) => {
     const handleChange = (event: any) => {
         history.push(event);
     };

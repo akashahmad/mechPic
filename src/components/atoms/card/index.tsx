@@ -1,9 +1,14 @@
 import { Card, Col } from 'antd';
-const MainCard = (props: any) => {
+
+interface Props {
+    children?: any;
+}
+
+const MainCard = ({ children }: Props) => {
     return (
         <Card className="shadow rounded-xl ">
             <Col xs={24} sm={24} md={24} lg={24}>
-                {props.children}
+                {children}
             </Col>
         </Card>
     );

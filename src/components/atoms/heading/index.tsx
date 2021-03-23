@@ -1,8 +1,11 @@
-// import "./style.css";
-const Heading = (props: any) => {
+interface Props {
+    heading?: any;
+}
+
+const Heading = ({ heading }: Props) => {
     return (
         <div className="text-2xl font-semibold text-center">
-            <h1>{props.heading}</h1>
+            <h1>{heading}</h1>
         </div>
     );
 };

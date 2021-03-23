@@ -1,7 +1,7 @@
-import { withRouter } from 'react-router-dom';
-import { Col } from 'antd';
 import TableHeader from '../molecules/seeUploadsHeader';
 import TableBody from '../molecules/seeUploads';
+import { Col } from 'antd';
+import { withRouter } from 'react-router-dom';
 // import MobileNavigation from "../molecules/mobileNavigation";
 // import ImageApprovalHeader from "../molecules/imagesApprovalHeader";
 
@@ -11,7 +11,7 @@ const seeUploads = () => {
             {/* header  */}
             <Col>
                 <TableHeader
-                // heading2="Pause All Uploads"
+                // heading2={'Pause All Uploads'}
                 />
             </Col>
             {/* table */}

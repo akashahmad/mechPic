@@ -1,8 +1,8 @@
-import { Row, Col, Switch, Avatar } from 'antd';
-import { withRouter } from 'react-router-dom';
 import { useState } from 'react';
 import { ArrowLeftOutlined, UserOutlined } from '@ant-design/icons';
 import Heading from '../../atoms/tableHeading';
+import { Row, Col, Switch, Avatar } from 'antd';
+import { withRouter } from 'react-router-dom';
 import './style.css';
 
 interface Props {
@@ -11,7 +11,6 @@ interface Props {
 }
 
 const SeeUploadsHeader = ({ history, heading2 }: Props) => {
-    // let { heading2, history } = props;
     const [pauseSwitch, setPauseSwitch] = useState(false);
     return (
         <Row className="flex-col flex-col-reverse lg:flex-row xl:flex-row lg:justify-between xl:justify-between seeUploadHeader py-4">
